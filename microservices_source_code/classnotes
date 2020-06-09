@@ -1,0 +1,7 @@
+Swagger Url
+==========
+http://localhost:8080/swagger-ui.html
+
+ZIpkin tracing
+========
+docker run -d -p 9411:9411 openzipkin/zipkin

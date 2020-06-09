@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: spring-eureka-image
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: nilay
+Implementation-Vendor-Id: com.eureka.image
+Build-Jdk: 1.8.0_252
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/spring-eureka-image
+Created-By: Maven Integration for Eclipse
+

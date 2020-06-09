@@ -1,0 +1,8 @@
+server:
+  port: 8088
+  
+spring:
+  application:
+     name: config-server  cloud:    config:      server:
+        bootstrap: true        git:          uri: https://github.com/dnilay/spring-config-repo.git
+  

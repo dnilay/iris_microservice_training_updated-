@@ -1,0 +1,12 @@
+server:
+  port: 8020
+spring:
+  application:
+    name: student-service
+  cloud:
+    consul:
+      discovery:
+        register: true
+        service-name: student-service
+      host: localhost
+      port: 8500

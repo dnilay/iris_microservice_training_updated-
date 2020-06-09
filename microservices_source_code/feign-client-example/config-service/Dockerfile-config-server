@@ -1,0 +1,12 @@
+FROM alpine-jdk:base
+
+MAINTAINER nagendra.kldm@gmail.com
+
+COPY config-service-0.0.1-SNAPSHOT.jar /opt/lib/
+
+# Run the jar file 
+ENTRYPOINT ["java","-jar","/opt/lib/config-service-0.0.1-SNAPSHOT.jar"]
+
+VOLUME /var/lib/config-repo
+
+EXPOSE 8088

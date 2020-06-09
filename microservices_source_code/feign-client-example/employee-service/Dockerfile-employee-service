@@ -1,0 +1,17 @@
+# Start with a base image containing Java runtime
+FROM alpine-jdk:base
+
+RUN apk --no-cache add netcat-openbsd
+
+# The application's jar file
+copy employee-service-0.0.1-SNAPSHOT.jar /opt/lib/
+
+COPY employee-client-entrypoint.sh /opt/lib/
+
+RUN chmod 755 /opt/lib/employee-client-entrypoint.sh
+
+# Make port 8090 available to the world outside this container
+EXPOSE 8090
+
+# Add a volume pointing to /var/lib/employee-repo
+VOLUME /var/lib/employee-repo
